@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #e6c229;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;   /*vh, viewport height - (dynamic), whatever is visible on your page, 70% is always container's*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;   /*vmin, 1% of viewport's smaller dimension*/ 
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;   /*according to wanting 3 divisions for the game boxes*/
+    width: 18vmin;  
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    font-size: 8vmin;
+    color: #6610f2;
+    background-color: #d11149;
+}
+
+#reset{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #1a8fe3;
+    color: #d11149;
+    border-radius: 1rem;
+    border: null;
+}
+
+#new{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #1a8fe3;
+    color: #d11149;
+    border-radius: 1rem;
+    border: null;
+}
+
+#msg{
+    color: rgb(51, 255, 36);
+    font-size: 10vmin;
+}
+
+.msg{
+    height: 100vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:4rem;
+}
+
+.hide{
+    display: none;
+}
